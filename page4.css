@@ -1,0 +1,207 @@
+/* עיצוב טבלת סניפים */
+table{
+  background-color: black;
+   border-collapse: collapse;
+   border-width: 2px;
+   width: 60%;
+   margin: 0 auto;
+}
+tr{
+   border-style: groove;
+  border-color:white;
+   height: 60px;
+   border-width: 2px;
+}
+td,th{
+  border-style: groove;
+  font-family:'Times New Roman', Times, serif;
+   font-style: italic;
+   font-weight:normal;
+   text-align: center;
+   color: white;
+   border-color: white;
+   font-size: 20px;
+   border-width: 2px;  
+}
+th{
+   color:rgb(165, 132, 42);
+   font: weight 100px;
+   text-shadow: 2px 2px 4px rgba(244, 239, 239, 0.5); 
+}
+caption{
+  font-family:'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
+  color:rgb(165, 132, 42);
+  font-size: 30px;
+  text-shadow: 2px 2px 4px rgba(244, 239, 239, 0.5); 
+}
+/* עיצוב טופס -צור קשר */
+#a{
+  font-size: 21px;
+}
+label{
+   display: inline-block;
+   width: 120px;
+   margin-bottom: 15px;
+   font-size: 20px;
+}
+legend{
+   color:rgb(165, 132, 42);
+   font-size: 23px;
+   text-shadow: 2px 2px 4px rgba(244, 239, 239, 0.5); 
+}
+.tofes1{
+  width: 100%; 
+  text-align: right;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bold;
+
+
+}
+fieldset{
+  height: 550px;
+}
+/* עיצוב הכיתוב שזז
+.zaz{
+   direction: ltr;
+   animation-name: zaz;
+   animation-duration: 8s;
+   animation-direction:alternate;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   white-space: nowrap;
+   font-size: 30px;
+   color: white;
+   text-shadow: 5px 5px 5px rgb(165, 132, 42);
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   opacity: 1rem;
+   font-weight: bold;
+  
+}
+@keyframes zaz {
+ 0% {
+     transform: translateX(0);
+ }
+
+ 100% {
+     transform: translateX(100%);
+ }
+
+} */
+/* עיצוב תמונות סניפים */
+ .snif {
+   width: 100%;
+   box-sizing: 3px;
+   border-color: white;
+   position: sticky;
+   border-radius: 8px 
+ }
+    #gallery{
+     display: grid;
+     grid-template-columns:repeat(4,1fr);
+   }
+ /* אינימציה תמונות סניפים */
+ .overlay {
+   position: absolute;
+   bottom: 0;
+   left: 100%;
+   right: 0%;
+   background-color: #080808;
+   overflow: hidden;
+   width: 100%;
+   height: 100%;
+   transition: .5s ease;
+   border-radius: 8px;
+ }
+ 
+ .snif:hover .overlay {
+   width: 0%;
+   left: 0;
+ }
+ 
+ .text {
+   white-space: nowrap; 
+   color:rgb(165, 132, 42);
+   font-size: 23px;
+   position: absolute;
+   overflow: hidden;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   text-shadow: 2px 2px 4px rgba(244, 239, 239, 0.5); 
+ }
+ @media only screen and (max-width:600px) {
+   table,p,td,.tofes1{
+     width:100%; 
+    }
+    img{
+     width: 75%;
+    }
+    #gallery{
+     display: inline block;
+     grid-template-columns: repeat(1, 1fr);
+       }
+    fieldset{
+     width:100%; 
+     float: right;
+    }
+   header{
+       flex-direction: row;
+      
+     }
+     td{
+    font-size: 13px;
+    width: 70px;
+     }
+     caption{
+       font-size: 23px;
+     }
+     legend{
+       font-size: 20px;
+     }
+     th,.text,#raz,#a, label{
+       font-size: 17px;
+     }
+
+    
+ }
+ @media screen and (min-width: 600px) and (max-width:1200px) {
+  table,.tofes1,textarea,p,td{
+       width:100%; 
+      }
+      #gallery{
+       display: inline block;
+       grid-template-columns: repeat(2, 1fr);
+         }
+      img{
+        width: 50%;   
+      } 
+      fieldset{
+         height: 100%;
+         width: 872px;
+      }
+     header{
+         flex-direction: row;
+         width: 370px;
+       }
+       td{
+      font-size: 18px;
+      width: 70px;
+       }
+       .imge{
+           justify-content:center; 
+       }
+       th, #a, label{
+         font-size: 23px;
+       }
+       .text, #raz{
+         font-size: 27px;
+       }
+ }
+
+
+  
+
